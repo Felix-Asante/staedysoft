@@ -118,3 +118,23 @@ header {
 		}
 	}
 }
+// TESTIMONIAL
+#testimonials {
+	.testimony {
+		background: white;
+		border-radius: 8px;
+		position: relative;
+		width: 370px !important;
+		margin-right: 13px;
+		opacity: 0.5;
+
+		.photo {
+			img {
+				width: 40px;
+				height: 40px;
+				border-radius: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}

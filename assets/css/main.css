@@ -49,39 +49,86 @@ img {
   gap: 14px;
 }
 
-/* line 6, ../sass/base/_utilities.scss */
+/* line 5, ../sass/base/_utilities.scss */
+.gap-md {
+  gap: 28px;
+}
+
+/* line 9, ../sass/base/_utilities.scss */
 .mtp-lg {
   margin-top: 12rem;
 }
 
-/* line 9, ../sass/base/_utilities.scss */
+/* line 12, ../sass/base/_utilities.scss */
 .mtp-xl {
   margin-top: 17rem;
 }
 
-/* line 12, ../sass/base/_utilities.scss */
+/* line 15, ../sass/base/_utilities.scss */
 .mtp-md {
   margin-top: 6rem;
 }
 
-/* line 16, ../sass/base/_utilities.scss */
+/* line 19, ../sass/base/_utilities.scss */
 .text_primary {
   color: #e52c48;
 }
 
-/* line 19, ../sass/base/_utilities.scss */
+/* line 22, ../sass/base/_utilities.scss */
 .text_secondary {
   color: #004ce4;
 }
 
-/* line 23, ../sass/base/_utilities.scss */
+/* line 26, ../sass/base/_utilities.scss */
 .bg_light {
   background: #f7f9fe;
 }
 
-/* line 27, ../sass/base/_utilities.scss */
+/* line 29, ../sass/base/_utilities.scss */
+.bg_dark {
+  background: #2d313d;
+}
+
+/* line 33, ../sass/base/_utilities.scss */
 .box-shadow {
   box-shadow: 1px 1px 20px #f7f9fe;
+}
+
+/* line 36, ../sass/base/_utilities.scss */
+.box-shadow-light {
+  box-shadow: 1px 1px 20px #f4f4f4;
+}
+
+/* line 40, ../sass/base/_utilities.scss */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+/* line 44, ../sass/base/_utilities.scss */
+.slick-dots button {
+  border: none;
+  outline: none;
+  background: #e52c48;
+  color: #e52c48;
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+  text-indent: -9999px;
+}
+/* line 55, ../sass/base/_utilities.scss */
+.slick-dots .slick-active {
+  width: 40px;
+  height: 8px;
+  background: #e52c48;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+/* line 63, ../sass/base/_utilities.scss */
+.slick-active {
+  opacity: 1 !important;
 }
 
 /* line 1, ../sass/components/_buttons.scss */
@@ -118,17 +165,21 @@ img {
   transform: scale(0.95);
 }
 
-/* line 4, ../sass/components/_navbar.scss */
+/* line 2, ../sass/components/_navbar.scss */
+header .Navbar {
+  transition: all 0.4s ease-in-out;
+}
+/* line 6, ../sass/components/_navbar.scss */
 header .Navbar .navbar-brand .logo {
   width: 60px;
   height: 60px;
 }
-/* line 10, ../sass/components/_navbar.scss */
+/* line 12, ../sass/components/_navbar.scss */
 header .Navbar .menu {
   width: 40px;
   cursor: pointer;
 }
-/* line 13, ../sass/components/_navbar.scss */
+/* line 15, ../sass/components/_navbar.scss */
 header .Navbar .menu .menu-line {
   display: block;
   width: 100%;
@@ -136,16 +187,94 @@ header .Navbar .menu .menu-line {
   background-color: #2d313d;
   margin-bottom: 5px;
 }
-/* line 20, ../sass/components/_navbar.scss */
+/* line 22, ../sass/components/_navbar.scss */
 header .Navbar .menu .line-3 {
   margin-bottom: 0;
+}
+
+/* line 28, ../sass/components/_navbar.scss */
+.scroll {
+  transition: all 0.4s ease-in-out;
+  transform: translateY(-2px);
+  background: white;
+  box-shadow: 1px 1px 10px #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
 }
 
 /* line 1, ../sass/components/_form.scss */
 input {
   border: none;
   outline: none;
+  padding: 8px 15px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+/* line 8, ../sass/components/_form.scss */
+textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+/* line 2, ../sass/components/_footer.scss */
+#footer img {
+  width: 150px;
+  height: 150px;
+}
+/* line 6, ../sass/components/_footer.scss */
+#footer i,
+#footer a,
+#footer li,
+#footer p,
+#footer h4 {
+  color: white;
+}
+/* line 13, ../sass/components/_footer.scss */
+#footer ul {
+  padding: 0;
+}
+/* line 15, ../sass/components/_footer.scss */
+#footer ul li {
+  line-height: 2;
+}
+/* line 17, ../sass/components/_footer.scss */
+#footer ul li a:hover {
+  color: #e52c48 !important;
+}
+/* line 23, ../sass/components/_footer.scss */
+#footer .social div {
+  background: #e52c48;
+  padding: 12px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+/* line 31, ../sass/components/_footer.scss */
+#footer form {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+/* line 35, ../sass/components/_footer.scss */
+#footer form input {
+  background: #f7f9fe;
+  border-radius: 50rem;
+  display: block;
   padding: 12px 15px;
+}
+/* line 41, ../sass/components/_footer.scss */
+#footer form textarea {
+  background: #f7f9fe;
+  border-radius: 8px;
+  padding: 12px;
+  height: 100px;
+  margin-bottom: 12px;
+}
+/* line 48, ../sass/components/_footer.scss */
+#footer form input[type="submit"] {
+  background: #e52c48;
+  color: white;
 }
 
 /* line 2, ../sass/pages/_index.scss */
@@ -256,6 +385,23 @@ header .hero .hero-text p {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   padding: 0.6rem;
+}
+
+/* line 123, ../sass/pages/_index.scss */
+#testimonials .testimony {
+  background: white;
+  border-radius: 8px;
+  position: relative;
+  width: 370px !important;
+  margin-right: 13px;
+  opacity: 0.5;
+}
+/* line 132, ../sass/pages/_index.scss */
+#testimonials .testimony .photo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */

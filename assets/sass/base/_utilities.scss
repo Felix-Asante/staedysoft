@@ -2,6 +2,9 @@
 .gap-sm {
 	gap: 14px;
 }
+.gap-md {
+	gap: 28px;
+}
 // MARGIN
 .mtp-lg {
 	margin-top: 12rem;
@@ -23,7 +26,40 @@
 .bg_light {
 	background: $light;
 }
+.bg_dark {
+	background: $light-dark;
+}
 // box shadow
 .box-shadow {
 	box-shadow: 1px 1px 20px $light;
+}
+.box-shadow-light {
+	box-shadow: 1px 1px 20px #f4f4f4;
+}
+// slick dots
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+	button {
+		border: none;
+		outline: none;
+		background: $primary-color;
+		color: $primary-color;
+		border-radius: 100%;
+		width: 8px;
+		height: 8px;
+		margin-right: 5px;
+		text-indent: -9999px;
+	}
+	.slick-active {
+		width: 40px;
+		height: 8px;
+		background: $primary-color;
+		border-radius: 8px;
+		margin-right: 5px;
+	}
+}
+.slick-active {
+	opacity: 1 !important;
 }

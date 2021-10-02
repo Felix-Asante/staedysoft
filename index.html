@@ -17,8 +17,15 @@
 			src="https://kit.fontawesome.com/fc494360f4.js"
 			crossorigin="anonymous"
 		></script>
-		<!-- LIGHTBOX CSS -->
-		<link rel="stylesheet" href="./assets/lightbox/dist/css/lightbox.css" />
+		<!-- IFRAME LIGHTBOX CSS -->
+		<link rel="stylesheet" href="./assets/iframe/iframe-lightbox.min.css" />
+		<!-- SLICK CSS -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+
 		<!-- CUSTOM CSS -->
 		<link rel="stylesheet" href="./assets/css/main.css" />
 	</head>
@@ -397,8 +404,9 @@
 						aria-labelledby="pills-contact-tab"
 					>
 						<a
-							href="https://www.youtube.com/watch?v=CQZxeoQeo5c"
+							href="https://www.youtube.com/embed/CQZxeoQeo5c?autoplay=0"
 							data-lightbox="video-1"
+							class="iframe-lightbox-link"
 						>
 							<img src="./assets/images/event-6.jpg" alt="" />
 							<i class="far fa-play-circle fa-2x"></i>
@@ -408,6 +416,150 @@
 			</div>
 		</section>
 		<!-- END OF OUR WORKS -->
+		<!-- TESTIMONIAL -->
+		<section id="testimonials" class="bg_light mtp-md py-5">
+			<div class="container">
+				<h2 class="text-center">REVIEWS</h2>
+				<p class="text-center mb-4 text_primary">
+					Clients honest review about our service
+				</p>
+				<div class="test-slick">
+					<div class="testimony box-shadow-light py-3 ps-3 pe-2">
+						<div class="photo d-flex gap-sm align-items-center">
+							<img src="./assets/images/hate.jpg" alt="" />
+							<p class="text_secondary pt-2">John Listowel</p>
+						</div>
+						<p class="mt-2">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+							molestiae alias pariatur quia magni, nam cumque ullam praesentium
+							sequi perspiciatis.
+						</p>
+					</div>
+					<div class="testimony box-shadow-light py-3 ps-3 pe-2">
+						<div class="photo d-flex gap-sm align-items-center">
+							<img src="./assets/images/hate.jpg" alt="" />
+							<p class="text_secondary pt-2">John Listowel</p>
+						</div>
+						<p class="mt-2">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+							molestiae alias pariatur quia magni, nam cumque ullam praesentium
+							sequi perspiciatis.
+						</p>
+					</div>
+					<div class="testimony box-shadow-light py-3 ps-3 pe-2">
+						<div class="photo d-flex gap-sm align-items-center">
+							<img src="./assets/images/hate.jpg" alt="" />
+							<p class="text_secondary pt-2">John Listowel</p>
+						</div>
+						<p class="mt-2">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+							molestiae alias pariatur quia magni, nam cumque ullam praesentium
+							sequi perspiciatis.
+						</p>
+					</div>
+					<div class="testimony box-shadow-light py-3 ps-3 pe-2">
+						<div class="photo d-flex gap-sm align-items-center">
+							<img src="./assets/images/hate.jpg" alt="" />
+							<p class="text_secondary pt-2">John Listowel</p>
+						</div>
+						<p class="mt-2">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+							molestiae alias pariatur quia magni, nam cumque ullam praesentium
+							sequi perspiciatis.
+						</p>
+					</div>
+					<div class="testimony box-shadow-light py-3 ps-3 pe-2">
+						<div class="photo d-flex gap-sm align-items-center">
+							<img src="./assets/images/hate.jpg" alt="" />
+							<p class="text_secondary pt-2">John Listowel</p>
+						</div>
+						<p class="mt-2">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+							molestiae alias pariatur quia magni, nam cumque ullam praesentium
+							sequi perspiciatis.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF TESTIMONIAL -->
+		<!-- FOOTER -->
+		<footer id="footer" class="bg_dark py-4">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="contact col-xl-4 col-lg">
+						<img src="./assets/images/Logo.png" alt="" />
+						<div class="address">
+							<div class="phone d-flex gap-sm">
+								<i class="fas fa-phone-square"></i>
+								<p>000 000-000 010</p>
+							</div>
+							<div class="d-flex gap-sm">
+								<i class="fas fa-map-marked-alt"></i>
+								<p>Old street, Downtown</p>
+							</div>
+						</div>
+						<div class="d-flex gap-sm social">
+							<div class="d-flex align-items-center justify-content-center">
+								<a href="">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</div>
+							<div class="d-flex align-items-center justify-content-center">
+								<a href="">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</div>
+							<div class="d-flex align-items-center justify-content-center">
+								<a href="">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg links">
+						<h4>Quick Links</h4>
+						<ul>
+							<li><a href="">What we do</a></li>
+							<li><a href="">Our works</a></li>
+							<li><a href="">Our portfolio</a></li>
+							<li><a href="">Policy</a></li>
+							<li><a href="">Terms & Conditions</a></li>
+						</ul>
+					</div>
+					<div class="col-xl-4 col-lg">
+						<form action="">
+							<h5 class="text-center mb-3">Get in touch with us</h5>
+							<div class="row">
+								<div class="name col-xl-6">
+									<input type="text" placeholder="Name" name="name" required />
+								</div>
+								<div class="phone col-xl-6">
+									<input
+										type="tel"
+										name="phone"
+										name="phone"
+										placeholder="Phone"
+									/>
+								</div>
+							</div>
+							<input type="email" name="email" placeholder="E-mail" required />
+							<textarea
+								name="message"
+								class="message"
+								placeholder="Message"
+							></textarea>
+							<input
+								type="submit"
+								value="Submit"
+								class="b_tn-md b_tn-primary"
+							/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END OF FOOTER -->
 		<!-- BOOTSTRAP JS -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -419,7 +571,49 @@
 			integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
 			crossorigin="anonymous"
 		></script>
-		<!-- LIGHTBOX JS -->
-		<script src="./assets/lightbox/dist/js/lightbox-plus-jquery.min.js"></script>
+		<!-- JQUERY CDN -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+		></script>
+		<!--IFRAME LIGHTBOX JS -->
+		<script src="./assets/iframe/iframe-lightbox.min.js"></script>
+		<!-- slick js -->
+		<script
+			type="text/javascript"
+			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+
+		<!-- INITIALIZE IFRAME / NAVBAR SCROLL EFFECT -->
+		<script>
+			[].forEach.call(
+				document.getElementsByClassName("iframe-lightbox-link"),
+				function (el) {
+					el.lightbox = new IframeLightbox(el);
+				}
+			);
+			// NAVBAR
+			const navBar = document.querySelector(".Navbar");
+			window.addEventListener("scroll", (e) => {
+				window.scrollY >= 20
+					? navBar.classList.add("scroll")
+					: navBar.classList.remove("scroll");
+			});
+		</script>
+		<!-- INIT SLICK -->
+		<script>
+			$(document).ready(function () {
+				$(".test-slick").slick({
+					autoplay: true,
+					slidesToShow: 2,
+					centerMode: true,
+					centerPadding: "190px",
+					arrows: false,
+					dots: true,
+					slidesToScroll: 1,
+				});
+			});
+		</script>
 	</body>
 </html>

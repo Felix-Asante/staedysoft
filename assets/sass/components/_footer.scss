@@ -1,0 +1,53 @@
+#footer {
+	img {
+		width: 150px;
+		height: 150px;
+	}
+	i,
+	a,
+	li,
+	p,
+	h4 {
+		color: white;
+	}
+	ul {
+		padding: 0;
+		li {
+			line-height: 2;
+			a:hover {
+				color: $primary-color !important;
+			}
+		}
+	}
+	.social {
+		div {
+			background: $primary-color;
+			padding: 12px;
+			border-radius: 50%;
+			width: 35px;
+			height: 35px;
+		}
+	}
+	form {
+		background: white;
+		padding: 15px;
+		border-radius: 8px;
+		input {
+			background: $light;
+			border-radius: 50rem;
+			display: block;
+			padding: 12px 15px;
+		}
+		textarea {
+			background: $light;
+			border-radius: 8px;
+			padding: 12px;
+			height: 100px;
+			margin-bottom: 12px;
+		}
+		input[type="submit"] {
+			background: $primary-color;
+			color: white;
+		}
+	}
+}
