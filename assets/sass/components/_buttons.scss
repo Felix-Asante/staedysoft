@@ -2,6 +2,7 @@
 	padding: 12px 15px;
 	border: none;
 	outline: none;
+	transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 // button sizes
 .b_tn-lg {
@@ -16,4 +17,9 @@
 }
 .b_tn-secondary {
 	background-color: $secondary-color;
+}
+// Hover states
+.b_tn-hover:hover {
+	transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+	transform: scale(0.95);
 }

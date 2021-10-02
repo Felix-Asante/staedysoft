@@ -1,0 +1,29 @@
+// LAYOUT GAP
+.gap-sm {
+	gap: 14px;
+}
+// MARGIN
+.mtp-lg {
+	margin-top: 12rem;
+}
+.mtp-xl {
+	margin-top: 17rem;
+}
+.mtp-md {
+	margin-top: 6rem;
+}
+// TEXT COLORS
+.text_primary {
+	color: $primary-color;
+}
+.text_secondary {
+	color: $secondary-color;
+}
+// BACKGROUND COLORS
+.bg_light {
+	background: $light;
+}
+// box shadow
+.box-shadow {
+	box-shadow: 1px 1px 20px $light;
+}

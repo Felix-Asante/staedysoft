@@ -1,0 +1,25 @@
+header {
+	.Navbar {
+		.navbar-brand {
+			.logo {
+				width: 60px;
+				height: 60px;
+			}
+		}
+
+		.menu {
+			width: 40px;
+			cursor: pointer;
+			.menu-line {
+				display: block;
+				width: 100%;
+				height: 2px;
+				background-color: $light-dark;
+				margin-bottom: 5px;
+			}
+			.line-3 {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

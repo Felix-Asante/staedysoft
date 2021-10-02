@@ -1,8 +1,11 @@
-// bases
-@import "./base/reset";
 // abstracts
 @import "./abstract/variables";
+// bases
+@import "./base/reset";
+@import "./base/utilities";
 // components
-@import "./components/buttons", "./components/form";
+@import "./components/buttons";
+@import "./components/navbar";
+@import "./components/form";
 // pages
 @import "./pages/index";
