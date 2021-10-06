@@ -403,14 +403,28 @@
 						role="tabpanel"
 						aria-labelledby="pills-contact-tab"
 					>
-						<a
-							href="https://www.youtube.com/embed/CQZxeoQeo5c?autoplay=0"
-							data-lightbox="video-1"
-							class="iframe-lightbox-link"
-						>
-							<img src="./assets/images/event-6.jpg" alt="" />
-							<i class="far fa-play-circle fa-2x"></i>
-						</a>
+						<div class="row gap-sm">
+							<div class="col-xl-4 col-lg">
+								<a
+									href="https://www.youtube.com/embed/CQZxeoQeo5c?autoplay=0"
+									data-lightbox="video-1"
+									class="iframe-lightbox-link"
+								>
+									<img src="./assets/images/event-6.jpg" alt="" />
+									<i class="far fa-play-circle fa-2x"></i>
+								</a>
+							</div>
+							<div class="col-xl-4 col-lg">
+								<a
+									href="https://www.youtube.com/embed/CQZxeoQeo5c?autoplay=0"
+									data-lightbox="video-1"
+									class="iframe-lightbox-link"
+								>
+									<img src="./assets/images/event-6.jpg" alt="" />
+									<i class="far fa-play-circle fa-2x"></i>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -612,8 +626,22 @@
 					arrows: false,
 					dots: true,
 					slidesToScroll: 1,
+					responsive: [
+						{
+							breakpoint: 1199,
+							settings: {
+								slidesToShow: 1,
+								centerMode: false,
+
+								// slidesToScroll: 3,
+								// infinite: true,
+								// dots: true
+							},
+						},
+					],
 				});
 			});
 		</script>
+		<script src="./assets/js/navbar.js"></script>
 	</body>
 </html>

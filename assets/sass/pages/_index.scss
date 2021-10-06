@@ -20,6 +20,9 @@ header {
 			h2 {
 				font-size: 3.1rem;
 				width: 420px;
+				@media screen and(max-width:991px) {
+					font-size: 2.3rem;
+				}
 			}
 			p {
 				margin-bottom: 0.2rem;
@@ -31,15 +34,43 @@ header {
 }
 // SECTION 1:OUR PAST
 #our-past {
+	@media screen and (max-width: 991px) {
+		margin-top: 29rem !important;
+		.row {
+			flex-direction: column-reverse !important;
+			gap: 3rem;
+
+			& div:nth-child(1) {
+				align-self: center;
+			}
+		}
+		.b_tn {
+			display: block !important;
+			margin: auto;
+			text-align: center;
+		}
+	}
 	img {
 		width: 500px;
 		height: 450px;
+		@media screen and (max-width: 991px) {
+			width: 100%;
+		}
 	}
 }
 // SECTION 2: WHO WE WORK WITH
+
 #who-we-work-with {
 	height: 20rem;
+
 	.work-group {
+		.row {
+			@media screen and(max-width:991px) {
+				display: grid !important;
+				grid-template-columns: 1fr;
+				gap: 12px;
+			}
+		}
 		.group {
 			background: white;
 			border: 1px solid $light;
@@ -48,6 +79,12 @@ header {
 			margin-right: 12px;
 			width: 400px;
 
+			@media screen and(max-width:1399px) {
+				width: 300px;
+			}
+			@media screen and(max-width:991px) {
+				width: 100%;
+			}
 			h3 {
 				font-size: 1.3rem;
 			}
@@ -77,8 +114,26 @@ header {
 	}
 }
 // CLIENT
+@media screen and(max-width:1399px) {
+	#client.mtp-xl {
+		margin-top: 22rem;
+	}
+}
+@media screen and(max-width:991px) {
+	#client.mtp-xl {
+		margin-top: 45rem;
+	}
+}
+@media screen and(max-width:767px) {
+	#client.mtp-xl {
+		margin-top: 50rem;
+	}
+}
 #client {
 	.row {
+		@media screen and(max-width:991px) {
+			gap: 1.5rem !important;
+		}
 		img {
 			width: 200px;
 			height: 90px;
@@ -87,6 +142,17 @@ header {
 			&:hover {
 				transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 				filter: grayscale(0%);
+			}
+		}
+		& > div {
+			@media screen and(max-width:991px) {
+				align-self: center;
+				justify-self: center;
+
+				img {
+					display: block;
+					margin: 0 auto;
+				}
 			}
 		}
 	}
@@ -100,6 +166,13 @@ header {
 		img {
 			width: 300px;
 			height: 300px;
+
+			@media screen and (max-width: 1199px) {
+				display: block;
+				margin: 0 auto;
+				width: 100%;
+				height: 100%;
+			}
 		}
 	}
 	.video-explainer {
@@ -114,6 +187,9 @@ header {
 				background: rgba(255, 255, 255, 0.8);
 				border-radius: 50%;
 				padding: 0.6rem;
+				@media screen and(max-width:1199px) {
+					transform: translate(210px, 120px);
+				}
 			}
 		}
 	}
@@ -126,8 +202,12 @@ header {
 		position: relative;
 		width: 370px !important;
 		margin-right: 13px;
-		opacity: 0.5;
-
+		@media screen and(min-width:1400px) {
+			opacity: 0.5;
+		}
+		@media screen and (max-width: 991px) {
+			margin-right: 10px;
+		}
 		.photo {
 			img {
 				width: 40px;

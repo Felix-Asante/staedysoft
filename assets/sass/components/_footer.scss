@@ -1,4 +1,10 @@
 #footer {
+	.row {
+		@media screen and(max-width:991px) {
+			justify-content: center !important;
+			gap: 1.7rem !important;
+		}
+	}
 	img {
 		width: 150px;
 		height: 150px;

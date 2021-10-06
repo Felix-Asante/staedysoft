@@ -3,15 +3,43 @@ header {
 		transition: all 0.4s ease-in-out;
 
 		.navbar-brand {
+			z-index: 20;
 			.logo {
 				width: 60px;
 				height: 60px;
 			}
 		}
-
+		.nav-links {
+			@media screen and(max-width:1191px) {
+				flex-direction: column;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: white;
+				opacity: 0.97;
+				width: 100%;
+				height: 100vh;
+				padding: 5.3rem 0 1.4rem 2rem;
+				// display: none;
+				opacity: 0;
+				pointer-events: none;
+				transform: translateX(-190px);
+				transition: all 0.4s ease-in;
+			}
+		}
+		.show-navs {
+			transition: all 0.4s ease-in;
+			// display: block;
+			opacity: 1;
+			pointer-events: visible;
+			transform: translateX(0);
+		}
 		.menu {
+			transition: all 0.4s ease-in;
 			width: 40px;
 			cursor: pointer;
+			z-index: 20;
+
 			.menu-line {
 				display: block;
 				width: 100%;
@@ -23,6 +51,22 @@ header {
 				margin-bottom: 0;
 			}
 		}
+		.open {
+			transition: all 0.4s ease-in;
+			.line-1 {
+				transform: rotate(45deg);
+				transform-origin: left;
+				// background-color: red;
+			}
+			.line-3 {
+				// background-color: blue;
+				transform: rotate(-50deg);
+				transform-origin: center;
+			}
+			.line-2 {
+				display: none;
+			}
+		}
 	}
 }
 .scroll {
@@ -31,4 +75,7 @@ header {
 	background: white;
 	box-shadow: 1px 1px 10px #f4f4f4;
 	border-bottom: 1px solid #f4f4f4;
+	@media screen and (max-width: 991px) {
+		transform: translateY(0) !important;
+	}
 }
