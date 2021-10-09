@@ -21,7 +21,7 @@
 		li {
 			line-height: 2;
 			a:hover {
-				color: $primary-color !important;
+				color: $secondary-color !important;
 			}
 		}
 	}
@@ -52,7 +52,7 @@
 			margin-bottom: 12px;
 		}
 		input[type="submit"] {
-			background: $primary-color;
+			background: $secondary-color;
 			color: white;
 		}
 	}

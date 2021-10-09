@@ -20,14 +20,17 @@
 	color: $primary-color;
 }
 .text_secondary {
-	color: $primary-color;
+	color: $secondary-color;
 }
 // BACKGROUND COLORS
 .bg_light {
 	background: $light;
 }
 .bg_dark {
-	background: $light-dark;
+	background: rgb(26, 50, 83);
+}
+.bg_primary {
+	background-color: $primary-color;
 }
 // box shadow
 .box-shadow {
@@ -44,7 +47,7 @@
 	button {
 		border: none;
 		outline: none;
-		background: $primary-color;
+		background: $secondary-color;
 		color: $primary-color;
 		border-radius: 100%;
 		width: 8px;
@@ -55,7 +58,7 @@
 	.slick-active {
 		width: 40px;
 		height: 8px;
-		background: $primary-color;
+		background: $secondary-color;
 		border-radius: 8px;
 		margin-right: 5px;
 	}

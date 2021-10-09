@@ -1,7 +1,9 @@
 // Header
 header {
-	background: url("/assets/images/curve 2.svg");
+	background: url("/assets/images/success.jpg");
 	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 	position: relative;
 	z-index: 2;
 	&::before {
@@ -11,20 +13,24 @@ header {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-image: linear-gradient(-170deg, #e1ecff 0%, transparent 40%);
+		background-color: #1a3253;
+		opacity: 0.8;
+		// background-image: linear-gradient(-170deg, #e1ecff 0%, transparent 40%);
 		z-index: -1;
 	}
 	.hero {
-		height: 38rem;
+		height: 45rem;
 		.hero-text {
 			h2 {
 				font-size: 3.1rem;
 				width: 420px;
+				color: white;
 				@media screen and(max-width:991px) {
 					font-size: 2.3rem;
 				}
 			}
 			p {
+				color: white;
 				margin-bottom: 0.2rem;
 				font-size: 1.1rem;
 				font-weight: 300;
@@ -35,7 +41,7 @@ header {
 // SECTION 1:OUR PAST
 #our-past {
 	@media screen and (max-width: 991px) {
-		margin-top: 29rem !important;
+		// margin-top: 29rem !important;
 		.row {
 			flex-direction: column-reverse !important;
 			gap: 3rem;
@@ -97,16 +103,24 @@ header {
 			}
 		}
 		.group-1 {
+			// border-bottom: 2px solid rgb(126, 166, 247);
 			.icon {
 				background: rgb(126, 166, 247);
 			}
 		}
 		.group-2 {
+			// border-bottom: 2px solid $light-dark;
+			background: $secondary-color;
+			h3,
+			p {
+				color: white;
+			}
 			.icon {
 				background: $light-dark;
 			}
 		}
 		.group-3 {
+			// border-bottom: 2px solid rgb(242, 99, 120);
 			.icon {
 				background: rgb(242, 99, 120);
 			}
@@ -162,6 +176,13 @@ header {
 }
 // OUR WORK
 #our-works {
+	button.active {
+		background: $primary-color;
+		color: white;
+	}
+	button {
+		color: $primary-color;
+	}
 	.tab-content {
 		img {
 			width: 300px;
