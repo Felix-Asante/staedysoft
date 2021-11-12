@@ -29,6 +29,9 @@
 .bg_dark {
 	background: rgb(26, 50, 83);
 }
+.bg_light-dark {
+	background: $light-dark;
+}
 .bg_primary {
 	background-color: $primary-color;
 }

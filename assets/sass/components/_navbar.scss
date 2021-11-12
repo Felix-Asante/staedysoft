@@ -1,4 +1,5 @@
 header {
+	z-index: 20 !important;
 	.Navbar {
 		transition: all 0.4s ease-in-out;
 
@@ -82,14 +83,14 @@ header {
 .scroll {
 	transition: all 0.4s ease-in-out;
 	transform: translateY(-2px);
-	background: white;
-	box-shadow: 1px 1px 10px #f4f4f4;
-	border-bottom: 1px solid #f4f4f4;
+	background: $primary-color;
+	// background: $light-dark;
+
 	@media screen and (max-width: 991px) {
 		transform: translateY(0) !important;
 	}
 	a,
 	li {
-		color: $light-dark !important;
+		color: white !important;
 	}
 }
