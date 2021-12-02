@@ -1,0 +1,20 @@
+.work-with-us {
+	margin-top: 4rem;
+	h1.text-white {
+		font-size: 3.1rem;
+	}
+	p.text-white {
+		margin-bottom: 1.7rem;
+		font-size: 1.2rem;
+	}
+	//
+	.btn_outline-secondary {
+		font-size: 1.1rem;
+	}
+	.cta.d-flex {
+		@media screen and (max-width: 600px) {
+			flex-direction: column !important;
+			gap: 1rem;
+		}
+	}
+}

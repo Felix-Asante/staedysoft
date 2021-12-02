@@ -36,6 +36,7 @@
 				<nav
 					class="
 						Navbar
+						scroll
 						fixed-top
 						nav
 						justify-content-between
@@ -47,9 +48,9 @@
 						><img src="./assets/images/Logo.png" alt="" class="logo"
 					/></a>
 					<ul class="nav-links nav gap-sm">
-						<li><a href="who-we-work-with.html">Who we work with</a></li>
+						<li><a href="#">Who we work with</a></li>
 						<li><a href="">What we do</a></li>
-						<li><a href="online-tools.html">Online tools</a></li>
+						<li><a href="" class="current-link">Online tools</a></li>
 						<li><a href="">Hosting</a></li>
 						<li>Our Work</li>
 						<li><a href="">Support Center</a></li>
@@ -61,90 +62,12 @@
 						><span class="menu-line line-3"></span>
 					</ul>
 				</nav>
-				<div class="hero">
-					<div class="row h-100">
-						<div class="col-xl-7 col-lg mtp-lg hero-text">
-							<h2 class="intro-text">It’s not just about the websites</h2>
-							<p class="intro-para mb-4">
-								It’s not just about the websites, It’s about
-								<span class="fw-bold">our customers success.</span>
-							</p>
-							<a
-								href=""
-								class="
-									b_tn b_tn-secondary
-									d-inline-block
-									rounded-pill
-									text-white
-									b_tn-md b_tn-hover
-								"
-								>Our Works
-								<i class="fas fa-briefcase me-4 text-white"></i>
-							</a>
-							<!-- <span class="intro-para">
-								It’s about <span class="fw-bold">our customers success.</span>
-							</span> -->
-						</div>
-						<!-- <div class="col-xl-5 col-lg h-100">
-							<img
-								src="./assets/images/client.png"
-								alt=""
-								class="w-100 h-100"
-							/>
-						</div> -->
-					</div>
-				</div>
 			</div>
 		</header>
 		<!--END OF HEADER AND HERO -->
-		<!-- SECTION ONE -->
-		<!-- mt-5 removed -->
-		<section id="our-past" class="bg_dark">
-			<div class="container">
-				<div class="row py-5">
-					<div class="col-xl-4 col-lg">
-						<img src="./assets/images/hate.jpg" alt="" />
-					</div>
-					<div class="col-xl-7 col-lg ps-5">
-						<h1 class="text_secondary">
-							We used to hate it when people asked us what we do.
-						</h1>
-						<p class="text-white">Because it’s not that simple.</p>
-						<p class="text-white">
-							We’re a cog in the wheel, we’re a set of tasks, tools, and goals
-							that support our customers on their way to their bigger picture.
-						</p>
-						<p class="text-white">
-							We do it by providing a focused expertise of web development,
-							hosting, social media, search engine optimization and design.
-						</p>
 
-						<p class="text-white">
-							We do our best work when we work with passionate people and we
-							believe in the philosophy that we’re all on the same team, and
-							it’s always OK to ask the tough questions.
-						</p>
-						<a
-							href=""
-							class="
-								b_tn b_tn-md
-								w-25
-								b_tn-secondary b_tn-hover
-								d-inline-block
-								rounded-pill
-								text-white text-center
-								mt-3
-							"
-							>Work with us
-							<i class="fas fa-tools"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- END SECTION ONE -->
 		<!-- WHO WE WORK WITH -->
-		<section id="who-we-work-with" class="bg_light mt-5 px-3">
+		<section id="who-we-work-with" class="bg_light work-with-us px-3">
 			<div class="container py-5">
 				<h1 class="text-center text-white">Who we work with</h1>
 				<p class="text-center text-white">We work with great people</p>
@@ -224,11 +147,32 @@
 						</div>
 					</div>
 				</div>
+				<div
+					class="
+						cta
+						d-flex
+						align-items-center
+						justify-content-center
+						gap-md
+						mt-5
+					"
+				>
+					<div class="call">
+						<h3 class="text-white">
+							<i class="fas fa-phone-volume"></i> (506) 232-9936
+						</h3>
+					</div>
+
+					<h5 class="text_secondary">OR</h5>
+					<a href="#footer" class="b_tn b_tn-sm btn_outline-secondary"
+						>Email us</a
+					>
+				</div>
 			</div>
 		</section>
 		<!-- END OF WHO WE WORK WITH -->
 		<!-- CLIENT -->
-		<section id="client" class="mtp-md bg_light py-5">
+		<section id="client" class="bg_light py-5">
 			<div class="container">
 				<h4 class="text_primary text-center">Some of our valued Clients</h4>
 				<div class="row mt-4 justify-content-center">
@@ -278,167 +222,12 @@
 			</div>
 		</section>
 		<!-- END OF CLIENT -->
-		<!-- OUR WORKS -->
-		<section id="our-works" class="mtp-md">
-			<div class="container">
-				<h2 class="text-center mb-4">Our Works</h2>
-				<ul
-					class="nav nav-pills mb-3 justify-content-center"
-					id="pills-tab"
-					role="tablist"
-				>
-					<li class="nav-item" role="presentation">
-						<button
-							class="nav-link active"
-							id="pills-home-tab"
-							data-bs-toggle="pill"
-							data-bs-target="#pills-home"
-							type="button"
-							role="tab"
-							aria-controls="pills-home"
-							aria-selected="true"
-						>
-							Websites
-						</button>
-					</li>
-					<li class="nav-item" role="presentation">
-						<button
-							class="nav-link"
-							id="pills-profile-tab"
-							data-bs-toggle="pill"
-							data-bs-target="#pills-profile"
-							type="button"
-							role="tab"
-							aria-controls="pills-profile"
-							aria-selected="false"
-						>
-							Designs
-						</button>
-					</li>
-					<li class="nav-item" role="presentation">
-						<button
-							class="nav-link"
-							id="pills-contact-tab"
-							data-bs-toggle="pill"
-							data-bs-target="#pills-contact"
-							type="button"
-							role="tab"
-							aria-controls="pills-contact"
-							aria-selected="false"
-						>
-							Explainer Videos
-						</button>
-					</li>
-				</ul>
-				<div class="tab-content" id="pills-tabContent">
-					<div
-						class="tab-pane fade show active"
-						id="pills-home"
-						role="tabpanel"
-						aria-labelledby="pills-home-tab"
-					>
-						<div class="row">
-							<div class="col-xl-4 col-lg">
-								<a href="sample.html">
-									<img src="./assets/images/work/websites/work-5.png" alt="" />
-								</a>
-							</div>
-							<div class="col-xl-4 col-lg">
-								<a href="sample.html">
-									<img src="./assets/images/work/websites/img4.png" alt="" />
-								</a>
-							</div>
-							<div class="col-xl-4 col-lg">
-								<a href="sample.html">
-									<img
-										src="./assets/images/work/websites/producto.png"
-										alt=""
-									/>
-								</a>
-							</div>
-							<div class="col-xl-4 col-lg">
-								<a href="sample.html">
-									<img
-										src="./assets/images/work/websites/appear-free-coming-soon.jpeg"
-										alt=""
-									/>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div
-						class="tab-pane fade"
-						id="pills-profile"
-						role="tabpanel"
-						aria-labelledby="pills-profile-tab"
-					>
-						<div class="row">
-							<div class="col-xl-4 col-lg">
-								<a href="">
-									<img src="./assets/images/work/websites/work-5.png" alt="" />
-								</a>
-							</div>
-							<div class="col-xl-4 col-lg">
-								<a href="">
-									<img src="./assets/images/work/websites/img4.png" alt="" />
-								</a>
-							</div>
-							<div class="col-xl-4 col-lg">
-								<a href="">
-									<img
-										src="./assets/images/work/websites/producto.png"
-										alt=""
-									/>
-								</a>
-							</div>
-							<div class="col-xl-4 col-lg">
-								<a href="">
-									<img
-										src="./assets/images/work/websites/appear-free-coming-soon.jpeg"
-										alt=""
-									/>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div
-						class="tab-pane fade video-explainer"
-						id="pills-contact"
-						role="tabpanel"
-						aria-labelledby="pills-contact-tab"
-					>
-						<div class="row gap-sm">
-							<div class="col-xl-4 col-lg">
-								<a
-									href="https://www.youtube.com/embed/CQZxeoQeo5c?autoplay=0"
-									data-lightbox="video-1"
-									class="iframe-lightbox-link"
-								>
-									<img src="./assets/images/event-6.jpg" alt="" />
-									<i class="far fa-play-circle fa-2x"></i>
-								</a>
-							</div>
-							<div class="col-xl-4 col-lg">
-								<a
-									href="https://www.youtube.com/embed/CQZxeoQeo5c?autoplay=0"
-									data-lightbox="video-1"
-									class="iframe-lightbox-link"
-								>
-									<img src="./assets/images/event-6.jpg" alt="" />
-									<i class="far fa-play-circle fa-2x"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- END OF OUR WORKS -->
+
 		<!-- TESTIMONIAL -->
 		<section id="testimonials" class="mtp-md py-5">
 			<div class="container">
 				<!--text_secondary added -->
-				<h2 class="text-center text_secondary">REVIEWS</h2>
+				<h2 class="text-center text_secondary">What our Clients are saying</h2>
 				<!-- text white added -->
 				<p class="text-center mb-5 text-white">
 					Clients honest review about our service
@@ -597,30 +386,14 @@
 			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
 			crossorigin="anonymous"
 		></script>
-		<!--IFRAME LIGHTBOX JS -->
-		<script src="./assets/iframe/iframe-lightbox.min.js"></script>
+
 		<!-- slick js -->
 		<script
 			type="text/javascript"
 			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
 		></script>
+		<!-- NAVBAR SCROLL EFFECT -->
 
-		<!-- INITIALIZE IFRAME / NAVBAR SCROLL EFFECT -->
-		<script>
-			[].forEach.call(
-				document.getElementsByClassName("iframe-lightbox-link"),
-				function (el) {
-					el.lightbox = new IframeLightbox(el);
-				}
-			);
-			// NAVBAR
-			const navBar = document.querySelector(".Navbar");
-			window.addEventListener("scroll", (e) => {
-				window.scrollY >= 20
-					? navBar.classList.add("scroll")
-					: navBar.classList.remove("scroll");
-			});
-		</script>
 		<!-- INIT SLICK -->
 		<script>
 			$(document).ready(function () {

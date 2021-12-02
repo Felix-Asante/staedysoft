@@ -11,6 +11,20 @@
 .b_tn-md {
 	padding: 12px;
 }
+.b_tn-sm {
+	padding: 8px 10px;
+}
+
+.btn_outline-secondary {
+	background-color: transparent;
+	border: 1px solid $secondary-color;
+	color: white;
+
+	&:hover {
+		background: $secondary-color;
+		color: $light-dark;
+	}
+}
 // button colors
 .b_tn-primary {
 	background-color: $primary-color;
