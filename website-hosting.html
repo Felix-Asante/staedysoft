@@ -41,6 +41,7 @@
 						justify-content-between
 						align-items-center
 						px-5
+						scroll
 					"
 				>
 					<a href="index.html" class="navbar-brand"
@@ -49,8 +50,8 @@
 					<ul class="nav-links nav gap-sm">
 						<li><a href="who-we-work-with.html">Who we work with</a></li>
 						<li><a href="">What we do</a></li>
-						<li><a href="#" class="current-link">Online tools</a></li>
-						<li><a href="website-hosting.html">Hosting</a></li>
+						<li><a href="#">Online tools</a></li>
+						<li><a href="#" class="current-link">Hosting</a></li>
 						<li>Our Work</li>
 						<li><a href="">Support Center</a></li>
 						<li><a href="">Contact Us</a></li>
@@ -309,41 +310,6 @@
 		></script>
 		<!-- NAVBAR SCROLL EFFECT -->
 
-		<!-- INIT SLICK -->
-		<script>
-			$(document).ready(function () {
-				$(".test-slick").slick({
-					autoplay: true,
-					slidesToShow: 2,
-					centerMode: true,
-					centerPadding: "190px",
-					arrows: false,
-					dots: true,
-					slidesToScroll: 1,
-					responsive: [
-						{
-							breakpoint: 1199,
-							settings: {
-								slidesToShow: 1,
-								centerMode: false,
-
-								// slidesToScroll: 3,
-								// infinite: true,
-								// dots: true
-							},
-						},
-					],
-				});
-			});
-
-			// NAVBAR
-			const navBar = document.querySelector(".Navbar");
-			window.addEventListener("scroll", (e) => {
-				window.scrollY >= 20
-					? navBar.classList.add("scroll")
-					: navBar.classList.remove("scroll");
-			});
-		</script>
 		<script src="./assets/js/navbar.js"></script>
 	</body>
 </html>

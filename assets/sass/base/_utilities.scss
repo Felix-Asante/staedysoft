@@ -15,12 +15,22 @@
 .mtp-md {
 	margin-top: 6rem;
 }
+// PADDING
+.py-md {
+	padding: 3rem 0;
+}
+.py-lg {
+	padding: 4rem 0;
+}
 // TEXT COLORS
 .text_primary {
 	color: $primary-color;
 }
 .text_secondary {
 	color: $secondary-color;
+}
+.text_light {
+	color: $light;
 }
 // BACKGROUND COLORS
 .bg_light {
@@ -71,4 +81,10 @@
 }
 .slick-active {
 	opacity: 1 !important;
+}
+.inner-hero {
+	height: 33rem;
+}
+.current-link {
+	color: $secondary-color !important;
 }

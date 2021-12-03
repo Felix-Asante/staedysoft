@@ -71,57 +71,72 @@ img {
 }
 
 /* line 19, ../sass/base/_utilities.scss */
+.py-md {
+  padding: 3rem 0;
+}
+
+/* line 22, ../sass/base/_utilities.scss */
+.py-lg {
+  padding: 4rem 0;
+}
+
+/* line 26, ../sass/base/_utilities.scss */
 .text_primary {
   color: #1a3253;
 }
 
-/* line 22, ../sass/base/_utilities.scss */
+/* line 29, ../sass/base/_utilities.scss */
 .text_secondary {
   color: #fec40a;
 }
 
-/* line 26, ../sass/base/_utilities.scss */
+/* line 32, ../sass/base/_utilities.scss */
+.text_light {
+  color: #f7f9fe;
+}
+
+/* line 36, ../sass/base/_utilities.scss */
 .bg_light {
   background: #f7f9fe;
 }
 
-/* line 29, ../sass/base/_utilities.scss */
+/* line 39, ../sass/base/_utilities.scss */
 .bg_dark {
   background: #1a3253;
 }
 
-/* line 32, ../sass/base/_utilities.scss */
+/* line 42, ../sass/base/_utilities.scss */
 .bg_light-dark {
   background: #2d313d;
 }
 
-/* line 35, ../sass/base/_utilities.scss */
+/* line 45, ../sass/base/_utilities.scss */
 .bg_primary {
   background-color: #1a3253;
 }
 
-/* line 38, ../sass/base/_utilities.scss */
+/* line 48, ../sass/base/_utilities.scss */
 .bg_secondary {
   background-color: #fec40a;
 }
 
-/* line 42, ../sass/base/_utilities.scss */
+/* line 52, ../sass/base/_utilities.scss */
 .box-shadow {
   box-shadow: 1px 1px 20px #f7f9fe;
 }
 
-/* line 45, ../sass/base/_utilities.scss */
+/* line 55, ../sass/base/_utilities.scss */
 .box-shadow-light {
   box-shadow: 1px 1px 20px #f4f4f4;
 }
 
-/* line 49, ../sass/base/_utilities.scss */
+/* line 59, ../sass/base/_utilities.scss */
 .slick-dots {
   display: flex;
   justify-content: center;
   margin-top: 25px;
 }
-/* line 53, ../sass/base/_utilities.scss */
+/* line 63, ../sass/base/_utilities.scss */
 .slick-dots button {
   border: none;
   outline: none;
@@ -133,7 +148,7 @@ img {
   margin-right: 5px;
   text-indent: -9999px;
 }
-/* line 64, ../sass/base/_utilities.scss */
+/* line 74, ../sass/base/_utilities.scss */
 .slick-dots .slick-active {
   width: 40px;
   height: 8px;
@@ -142,9 +157,19 @@ img {
   margin-right: 5px;
 }
 
-/* line 72, ../sass/base/_utilities.scss */
+/* line 82, ../sass/base/_utilities.scss */
 .slick-active {
   opacity: 1 !important;
+}
+
+/* line 85, ../sass/base/_utilities.scss */
+.inner-hero {
+  height: 33rem;
+}
+
+/* line 88, ../sass/base/_utilities.scss */
+.current-link {
+  color: #fec40a !important;
 }
 
 /* line 1, ../sass/components/_buttons.scss */
@@ -738,6 +763,153 @@ header .hero .hero-text p {
   .work-with-us .cta.d-flex {
     flex-direction: column !important;
     gap: 1rem;
+  }
+}
+
+/* line 1, ../sass/pages/_online-tools.scss */
+#online-tools {
+  background-image: url("../images/online-tool.jpg");
+}
+/* line 5, ../sass/pages/_online-tools.scss */
+#online-tools .row h2 {
+  font-size: 3rem;
+}
+@media screen and (max-width: 768px) {
+  /* line 5, ../sass/pages/_online-tools.scss */
+  #online-tools .row h2 {
+    font-size: 2rem;
+  }
+}
+/* line 11, ../sass/pages/_online-tools.scss */
+#online-tools .row p {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  /* line 11, ../sass/pages/_online-tools.scss */
+  #online-tools .row p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 21, ../sass/pages/_online-tools.scss */
+  #what-we-can-offer .container > .row {
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* line 28, ../sass/pages/_online-tools.scss */
+#what-we-can-offer .offer {
+  margin-bottom: 1.4rem;
+}
+@media screen and (max-width: 991px) {
+  /* line 28, ../sass/pages/_online-tools.scss */
+  #what-we-can-offer .offer {
+    margin-bottom: 1.8rem;
+  }
+}
+/* line 33, ../sass/pages/_online-tools.scss */
+#what-we-can-offer .offer .icon {
+  border: 2px solid #677275;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  transition: all 0.4s linear;
+}
+@media screen and (max-width: 1199px) {
+  /* line 33, ../sass/pages/_online-tools.scss */
+  #what-we-can-offer .offer .icon {
+    width: 20%;
+    margin: 0 auto 10px auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 33, ../sass/pages/_online-tools.scss */
+  #what-we-can-offer .offer .icon {
+    width: 15%;
+  }
+}
+/* line 46, ../sass/pages/_online-tools.scss */
+#what-we-can-offer .offer .icon:hover {
+  border-color: #fec40a;
+  transform: scale(0.89);
+}
+/* line 49, ../sass/pages/_online-tools.scss */
+#what-we-can-offer .offer .icon:hover i {
+  color: #fec40a;
+}
+/* line 53, ../sass/pages/_online-tools.scss */
+#what-we-can-offer .offer .icon i {
+  color: #677275;
+  font-size: 2.2rem;
+  text-align: center;
+}
+/* line 60, ../sass/pages/_online-tools.scss */
+#what-we-can-offer .offer .description h5 {
+  color: white;
+  font-weight: 400;
+}
+@media screen and (max-width: 1199px) {
+  /* line 60, ../sass/pages/_online-tools.scss */
+  #what-we-can-offer .offer .description h5 {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+}
+/* line 72, ../sass/pages/_online-tools.scss */
+#what-we-can-offer .idea-img img {
+  height: 80% !important;
+  filter: grayscale(100%);
+}
+@media screen and (max-width: 1199px) {
+  /* line 72, ../sass/pages/_online-tools.scss */
+  #what-we-can-offer .idea-img img {
+    height: 100% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 72, ../sass/pages/_online-tools.scss */
+  #what-we-can-offer .idea-img img {
+    display: none !important;
+  }
+}
+/* line 81, ../sass/pages/_online-tools.scss */
+#what-we-can-offer .idea-img img:hover {
+  filter: grayscale(0);
+}
+
+/* line 88, ../sass/pages/_online-tools.scss */
+#elephant-in-the-room .row > * {
+  padding-right: 0;
+}
+/* line 92, ../sass/pages/_online-tools.scss */
+#elephant-in-the-room .description h6 {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 991px) {
+  /* line 92, ../sass/pages/_online-tools.scss */
+  #elephant-in-the-room .description h6 {
+    font-size: 1.2rem;
+  }
+}
+/* line 98, ../sass/pages/_online-tools.scss */
+#elephant-in-the-room .description h4 {
+  font-size: 2.1rem;
+}
+@media screen and (max-width: 991px) {
+  /* line 98, ../sass/pages/_online-tools.scss */
+  #elephant-in-the-room .description h4 {
+    font-size: 1.7rem;
+  }
+}
+/* line 104, ../sass/pages/_online-tools.scss */
+#elephant-in-the-room .description p {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 991px) {
+  /* line 104, ../sass/pages/_online-tools.scss */
+  #elephant-in-the-room .description p {
+    font-size: 1rem;
   }
 }
 
