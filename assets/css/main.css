@@ -172,6 +172,18 @@ img {
   color: #fec40a !important;
 }
 
+/* line 1, ../sass/layout/_grid.scss */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 991px) {
+  /* line 1, ../sass/layout/_grid.scss */
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* line 1, ../sass/components/_buttons.scss */
 .b_tn {
   padding: 12px 15px;
@@ -910,6 +922,79 @@ header .hero .hero-text p {
   /* line 104, ../sass/pages/_online-tools.scss */
   #elephant-in-the-room .description p {
     font-size: 1rem;
+  }
+}
+
+/* line 1, ../sass/pages/_web-hosting.scss */
+.web-hosting {
+  background: url("../images/hostingg.jpg") !important;
+}
+
+/* line 5, ../sass/pages/_web-hosting.scss */
+#packages .grid-3 {
+  background: #ffff;
+  position: relative;
+}
+/* line 10, ../sass/pages/_web-hosting.scss */
+#packages .grid-3 .type h4 {
+  font-size: 1.9rem;
+}
+/* line 14, ../sass/pages/_web-hosting.scss */
+#packages .grid-3 > * {
+  border: 2px solid #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 1px 1px 20px #f4f4f4;
+}
+/* line 19, ../sass/pages/_web-hosting.scss */
+#packages .grid-3 > * i {
+  margin-right: 10px;
+}
+/* line 22, ../sass/pages/_web-hosting.scss */
+#packages .grid-3 > * li {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+/* line 27, ../sass/pages/_web-hosting.scss */
+#packages .grid-3 > * h2 {
+  font-size: 4rem;
+}
+/* line 29, ../sass/pages/_web-hosting.scss */
+#packages .grid-3 > * h2 span {
+  font-size: 1rem;
+}
+/* line 34, ../sass/pages/_web-hosting.scss */
+#packages .grid-3 .standard,
+#packages .grid-3 .enterprise {
+  position: relative;
+}
+/* line 37, ../sass/pages/_web-hosting.scss */
+#packages .grid-3 .standard h2,
+#packages .grid-3 .enterprise h2 {
+  color: #fec40a;
+}
+/* line 41, ../sass/pages/_web-hosting.scss */
+#packages .grid-3 .standard h2 span,
+#packages .grid-3 .enterprise h2 span {
+  color: #2d313d !important;
+}
+/* line 46, ../sass/pages/_web-hosting.scss */
+#packages .grid-3 .standard {
+  height: calc(100% - 27%);
+}
+@media screen and (max-width: 991px) {
+  /* line 46, ../sass/pages/_web-hosting.scss */
+  #packages .grid-3 .standard {
+    height: 100%;
+  }
+}
+/* line 52, ../sass/pages/_web-hosting.scss */
+#packages .grid-3 .professional {
+  height: calc(100% - 10%);
+}
+@media screen and (max-width: 991px) {
+  /* line 52, ../sass/pages/_web-hosting.scss */
+  #packages .grid-3 .professional {
+    height: 100%;
   }
 }
 

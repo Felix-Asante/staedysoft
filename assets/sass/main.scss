@@ -3,6 +3,8 @@
 // bases
 @import "./base/reset";
 @import "./base/utilities";
+// layout
+@import "./layout/grid";
 // components
 @import "./components/buttons";
 @import "./components/navbar";
@@ -12,3 +14,4 @@
 @import "./pages/index";
 @import "./pages/work-with-us";
 @import "./pages/online-tools";
+@import "./pages/web-hosting";

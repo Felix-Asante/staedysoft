@@ -1,0 +1,59 @@
+.web-hosting {
+	background: url("../images/hostingg.jpg") !important;
+}
+#packages {
+	.grid-3 {
+		background: #ffff;
+		// padding: 2rem 0;
+		position: relative;
+		.type {
+			h4 {
+				font-size: 1.9rem;
+			}
+		}
+		& > * {
+			border: 2px solid #f4f4f4;
+			border-radius: 8px;
+			box-shadow: 1px 1px 20px #f4f4f4;
+
+			i {
+				margin-right: 10px;
+			}
+			li {
+				margin-bottom: 10px;
+				// border-bottom: 2px dotted $light-dark;
+				padding-bottom: 5px;
+			}
+			h2 {
+				font-size: 4rem;
+				span {
+					font-size: 1rem;
+				}
+			}
+		}
+		.standard,
+		.enterprise {
+			position: relative;
+			h2 {
+				// padding-bottom: 6rem;
+
+				color: $secondary-color;
+				span {
+					color: $light-dark !important;
+				}
+			}
+		}
+		.standard {
+			height: calc(100% - 27%);
+			@media screen and(max-width:991px) {
+				height: 100%;
+			}
+		}
+		.professional {
+			height: calc(100% - 10%);
+			@media screen and(max-width:991px) {
+				height: 100%;
+			}
+		}
+	}
+}
