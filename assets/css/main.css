@@ -80,63 +80,63 @@ img {
   padding: 4rem 0;
 }
 
-/* line 26, ../sass/base/_utilities.scss */
+/* line 27, ../sass/base/_utilities.scss */
 .text_primary {
   color: #1a3253;
 }
 
-/* line 29, ../sass/base/_utilities.scss */
+/* line 30, ../sass/base/_utilities.scss */
 .text_secondary {
   color: #fec40a;
 }
 
-/* line 32, ../sass/base/_utilities.scss */
+/* line 33, ../sass/base/_utilities.scss */
 .text_light {
   color: #f7f9fe;
 }
 
-/* line 36, ../sass/base/_utilities.scss */
+/* line 37, ../sass/base/_utilities.scss */
 .bg_light {
   background: #f7f9fe;
 }
 
-/* line 39, ../sass/base/_utilities.scss */
+/* line 40, ../sass/base/_utilities.scss */
 .bg_dark {
   background: #1a3253;
 }
 
-/* line 42, ../sass/base/_utilities.scss */
+/* line 43, ../sass/base/_utilities.scss */
 .bg_light-dark {
   background: #2d313d;
 }
 
-/* line 45, ../sass/base/_utilities.scss */
+/* line 46, ../sass/base/_utilities.scss */
 .bg_primary {
   background-color: #1a3253;
 }
 
-/* line 48, ../sass/base/_utilities.scss */
+/* line 49, ../sass/base/_utilities.scss */
 .bg_secondary {
   background-color: #fec40a;
 }
 
-/* line 52, ../sass/base/_utilities.scss */
+/* line 53, ../sass/base/_utilities.scss */
 .box-shadow {
   box-shadow: 1px 1px 20px #f7f9fe;
 }
 
-/* line 55, ../sass/base/_utilities.scss */
+/* line 56, ../sass/base/_utilities.scss */
 .box-shadow-light {
   box-shadow: 1px 1px 20px #f4f4f4;
 }
 
-/* line 59, ../sass/base/_utilities.scss */
+/* line 60, ../sass/base/_utilities.scss */
 .slick-dots {
   display: flex;
   justify-content: center;
   margin-top: 25px;
 }
-/* line 63, ../sass/base/_utilities.scss */
+/* line 64, ../sass/base/_utilities.scss */
 .slick-dots button {
   border: none;
   outline: none;
@@ -148,7 +148,7 @@ img {
   margin-right: 5px;
   text-indent: -9999px;
 }
-/* line 74, ../sass/base/_utilities.scss */
+/* line 75, ../sass/base/_utilities.scss */
 .slick-dots .slick-active {
   width: 40px;
   height: 8px;
@@ -157,17 +157,17 @@ img {
   margin-right: 5px;
 }
 
-/* line 82, ../sass/base/_utilities.scss */
+/* line 83, ../sass/base/_utilities.scss */
 .slick-active {
   opacity: 1 !important;
 }
 
-/* line 85, ../sass/base/_utilities.scss */
+/* line 86, ../sass/base/_utilities.scss */
 .inner-hero {
   height: 33rem;
 }
 
-/* line 88, ../sass/base/_utilities.scss */
+/* line 89, ../sass/base/_utilities.scss */
 .current-link {
   color: #fec40a !important;
 }
@@ -996,6 +996,85 @@ header .hero .hero-text p {
   #packages .grid-3 .professional {
     height: 100%;
   }
+}
+
+/* line 1, ../sass/pages/_contact-us.scss */
+header#contact-us {
+  background: none !important;
+  position: relative;
+}
+/* line 4, ../sass/pages/_contact-us.scss */
+header#contact-us::before {
+  background: none !important;
+}
+/* line 7, ../sass/pages/_contact-us.scss */
+header#contact-us .inner-hero {
+  position: relative;
+  background: url("../images/contact.jpg") no-repeat center center/cover;
+  z-index: 10;
+  height: 25rem;
+}
+/* line 12, ../sass/pages/_contact-us.scss */
+header#contact-us .inner-hero::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a3253;
+  opacity: 0.75;
+  z-index: -1;
+}
+/* line 23, ../sass/pages/_contact-us.scss */
+header#contact-us .inner-hero h1 {
+  font-size: 3rem;
+}
+@media screen and (max-width: 768px) {
+  /* line 23, ../sass/pages/_contact-us.scss */
+  header#contact-us .inner-hero h1 {
+    font-size: 2.1rem;
+  }
+}
+/* line 29, ../sass/pages/_contact-us.scss */
+header#contact-us .inner-hero p {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  /* line 29, ../sass/pages/_contact-us.scss */
+  header#contact-us .inner-hero p {
+    font-size: 1rem;
+  }
+}
+
+/* line 38, ../sass/pages/_contact-us.scss */
+.contact-us .row {
+  gap: 2rem;
+}
+/* line 41, ../sass/pages/_contact-us.scss */
+.contact-us .map {
+  width: 800px;
+  height: 500px;
+}
+/* line 45, ../sass/pages/_contact-us.scss */
+.contact-us .form {
+  border-radius: 8px;
+}
+/* line 47, ../sass/pages/_contact-us.scss */
+.contact-us .form input,
+.contact-us .form textarea {
+  margin-bottom: 18px;
+}
+/* line 51, ../sass/pages/_contact-us.scss */
+.contact-us .form input:focus,
+.contact-us .form textarea:focus {
+  border-color: #2d313d;
+}
+/* line 55, ../sass/pages/_contact-us.scss */
+.contact-us .form textarea {
+  height: 8rem;
+  resize: none;
+  padding: 0.4rem;
 }
 
 /*# sourceMappingURL=main.css.map */

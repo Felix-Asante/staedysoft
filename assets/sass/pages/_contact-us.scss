@@ -1,0 +1,61 @@
+header#contact-us {
+	background: none !important;
+	position: relative;
+	&::before {
+		background: none !important;
+	}
+	.inner-hero {
+		position: relative;
+		background: url("../images/contact.jpg") no-repeat center center/cover;
+		z-index: 10;
+		height: 25rem;
+		&::before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #1a3253;
+			opacity: 0.75;
+			z-index: -1;
+		}
+		h1 {
+			font-size: 3rem;
+			@media screen and(max-width:768px) {
+				font-size: 2.1rem;
+			}
+		}
+		p {
+			font-size: 1.2rem;
+			@media screen and(max-width:768px) {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+.contact-us {
+	.row {
+		gap: 2rem;
+	}
+	.map {
+		width: 800px;
+		height: 500px;
+	}
+	.form {
+		border-radius: 8px;
+		input,
+		textarea {
+			// border: 2px solid $light;
+			margin-bottom: 18px;
+			&:focus {
+				border-color: $light-dark;
+			}
+		}
+		textarea {
+			height: 8rem;
+			resize: none;
+			padding: 0.4rem;
+		}
+	}
+}
